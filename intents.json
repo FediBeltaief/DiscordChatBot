@@ -1,0 +1,94 @@
+{
+   "intents": [
+      {
+         "tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+         "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"],
+         "context_set": ""
+      },
+      {
+         "tag": "goodbye",
+         "patterns": ["Goodbye", "See you later", "Bye", "Take care"],
+         "responses": ["Goodbye!", "See you soon!", "Have a great day!"],
+         "context_set": ""
+      },
+      {
+         "tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "Appreciate it"],
+         "responses": ["You're welcome!", "Glad I could help!", "Anytime!"],
+         "context_set": ""
+      },
+      {
+         "tag": "product_search",
+         "patterns": ["Find me a product", "Search for product", "I need product"],
+         "responses": ["Sure, let me find that for you!", "I can help you with that. What type of [product] are you looking for?"],
+         "context_set": ""
+      },
+      {
+         "tag": "product_info",
+         "patterns": ["Tell me about product", "What can you tell me about product", "Give me details on product"],
+         "responses": ["Certainly! [Product] is [brief description]. If you have specific questions, feel free to ask!"],
+         "context_set": ""
+      },
+      {
+         "tag": "order_status",
+         "patterns": ["Check my order status", "Where is my order", "What's the status of my order"],
+         "responses": ["Let me check that for you. Can you please provide your order number?"],
+         "context_set": "order_status"
+      },
+      {
+         "tag": "order_cancel",
+         "patterns": ["Cancel my order", "I want to cancel my order", "Stop my order"],
+         "responses": ["I'm sorry to hear that. To proceed with the cancellation, can you please provide your order number?"],
+         "context_set": "order_cancel"
+      },
+      {
+         "tag": "payment_issue",
+         "patterns": ["Payment problem", "Issue with payment", "Payment error"],
+         "responses": ["I apologize for the inconvenience. Could you please provide more details about the payment issue you're facing?"],
+         "context_set": "payment_issue"
+      },
+      {
+         "tag": "shipping_info",
+         "patterns": ["Track my shipment", "Where is my package", "Shipping details"],
+         "responses": ["Sure, I can help with that. Can you please provide your tracking number?"],
+         "context_set": "shipping_info"
+      },
+      {
+         "tag": "promo_code",
+         "patterns": ["Apply promo code", "Discount code", "Promotion"],
+         "responses": ["Certainly! Please enter the promo code during the checkout process, and the discount will be applied."],
+         "context_set": "promo_code"
+      },
+     {
+         "tag": "back_in_stock",
+         "patterns": ["Notify me when [product] is back in stock", "Restock [product]", "When will [product] be available again?"],
+         "responses": ["Certainly! We can notify you when [product] is back in stock. May I have your email address for notification?"],
+         "context_set": "back_in_stock"
+      },
+      {
+         "tag": "recommendation",
+         "patterns": ["Can you recommend a [product]?", "Suggest me a [product] I might like", "What's popular now?"],
+         "responses": ["Certainly! Based on your preferences, I recommend trying [recommended_product]. It's a popular choice among our customers!"],
+         "context_set": "recommendation"
+      },
+      {
+         "tag": "account_help",
+         "patterns": ["I forgot my password", "Reset my password", "Account assistance"],
+         "responses": ["No problem! To reset your password, could you please provide the email address associated with your account?"],
+         "context_set": "account_help"
+      },
+      {
+         "tag": "returns",
+         "patterns": ["Return policy", "How to return an item", "Exchange process"],
+         "responses": ["Our return policy allows returns within [number] days of purchase. To initiate a return, please visit our returns page or contact our customer service with your order details."],
+         "context_set": "returns"
+      },
+      {
+         "tag": "wishlist",
+         "patterns": ["Add to my wishlist", "View my wishlist", "Remove from wishlist"],
+         "responses": ["Your wishlist has been updated! You can view and manage your wishlist in your account settings."],
+         "context_set": "wishlist"
+      }
+   ]
+}
